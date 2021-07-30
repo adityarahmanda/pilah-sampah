@@ -1,13 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class BatasAkhirSampah : MonoBehaviour
 {
+    //Check if any game object enter the trigger
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Destroy(collision.gameObject);
-        SceneManager.LoadScene("GameOver");
+        //Destroy the game object
+        Destroy(collision.gameObject); 
     }
 }
